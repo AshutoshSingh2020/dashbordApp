@@ -1,0 +1,93 @@
+<div class="sidebar">
+    <ul class="nav-list">
+        <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search..." />
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a routerLink="dashboard">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a routerLink="chart">
+                <i class='bx bx-line-chart'></i>
+                <span class="links_name">Chart</span>
+            </a>
+            <span class="tooltip">Chart</span>
+        </li>
+        <li>
+            <div class="iocn-link">
+                <a>
+                    <i class="bx bx-user"></i>
+                    <span class="links_name">User</span>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </a>
+                <!-- <span class="tooltip">User</span> -->
+            </div>
+            <ul class="sub-menu iocn-link">
+                <li class="links_name"><a routerLink="user/create-user">Create User</a></li>
+                <li class="links_name"><a routerLink="user/user-table">User Table</a></li>
+            </ul>
+        </li>
+        <li>
+            <a routerLink="counter">
+                <i class="bx bx-chat"></i>
+                <span class="links_name">Counter</span>
+            </a>
+            <span class="tooltip">Counter</span>
+        </li>
+        <li>
+            <a>
+                <i class="bx bx-pie-chart-alt-2"></i>
+                <span class="links_name">Analytics</span>
+            </a>
+            <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+            <a>
+                <i class="bx bx-folder"></i>
+                <span class="links_name">File Manager</span>
+            </a>
+            <span class="tooltip">Files</span>
+        </li>
+        <li>
+            <a>
+                <i class="bx bx-cart-alt"></i>
+                <span class="links_name">Order</span>
+            </a>
+            <span class="tooltip">Order</span>
+        </li>
+        <li>
+            <a>
+                <i class="bx bx-heart"></i>
+                <span class="links_name">Saved</span>
+            </a>
+            <span class="tooltip">Saved</span>
+        </li>
+        <li>
+            <a>
+                <i class="bx bx-cog"></i>
+                <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+            <div class="profile-details">
+                <img src="assets/img/img1.jpg" alt="profileImg" />
+                <div class="name_job">
+                    <div class="name">{{ username  | titlecase }}</div>
+                    <div class="job">Front-developer</div>
+                </div>
+            </div>
+            <i class="bx bx-log-out" id="log_out" (click)="logout()" style="cursor: pointer;"></i>
+        </li>
+    </ul>
+</div>
+<section class="home-section">
+    <router-outlet></router-outlet>
+    <app-footer class=""></app-footer>
+</section>

@@ -1,0 +1,94 @@
+.navText {
+    font-size: 1.1rem;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+
+
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+#notes {
+    padding: 5px;
+    position: fixed;
+    top: 95px;
+    right: 20px;
+    width: 256px;
+    height: 206px;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+  }
+
+  .profileimg{    
+        border-radius: 50%;
+        width: 50px; 
+        height: 50px;
+    
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-details {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 30px;
+}
+
+.logo-details .icon {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.logo-details .logo_name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.logo-details .icon,
+.logo-details .logo_name {
+    opacity: 1;
+}
+
+.logo-details #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    background-color: #11101D;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 25px;
+}
+
+.navText1{
+    font-size: 13px;
+    width: 100px;
+    padding: 4px;
+}
+.navText2{
+    font-size: 10px;
+    width: 100px;
+    padding: 4px;
+}

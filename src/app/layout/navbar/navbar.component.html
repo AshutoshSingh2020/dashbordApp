@@ -1,0 +1,55 @@
+<div style="margin-bottom: 100px;">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top">
+        <div class="logo-details me-5">
+            <!-- <i class="bx bxl-c-plus-plus icon"></i> -->
+            <!-- <div class="logo_name">CodingLab</div> -->
+            <i class="bx bx-menu" id="btn" (click)="menuBtn()"></i>
+        </div>
+        <div class="container">
+            <a class="navbar-brand navText">{{ username | uppercase }}  DashBoard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <!-- <a href class="nav-link active navText" (click)="logout()">LogOut</a> -->
+                            <button (click)="toggleDisplayDivIf()" [ngStyle]="styles" >{{ username | firstLetter | titlecase  }} </button>  
+                        </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div *ngIf="isShowDiv" style=" " id="notes">
+                       
+         
+              <img alt="User Image" class="img-circle" src="assets/img/img1.jpg" class="profileimg" >
+              <p>
+               {{ username | titlecase }}&nbsp;(Manager)                      <small>{{ username }}</small>
+                <small></small>
+              </p>
+           
+           <li class="user-header" style="height:65px;color:#f9f57f;font-size: 15px; list-style-type: none;"> If you sign out from here you will be logged out from attendance.</li>
+                      
+           <div class="">
+
+               <div class="" style="float: left; padding-left: 5px;">
+                   <a href class="nav-link active navText1 btn btn-info" (click)="logout()">LogOut</a> 
+                   
+                </div>
+                <div class="" style="float: right;padding-right: 5px;">
+                    <a href class="nav-link active navText2 btn btn-primary" routerLink="/forgot-password">Change Password</a>
+                </div>
+            </div>
+          
+          
+        
+        </div> 
+</div>
+
